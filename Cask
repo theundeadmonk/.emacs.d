@@ -12,3 +12,7 @@
 (depends-on "visible-mark")
 (depends-on "web-mode")
 (depends-on "yaml-mode")
+(depends-on "dash-at-point")
+(depends-on "seeing-is-believing")
+(depends-on "plan9-theme")
+(depends-on "exec-path-from-shell")

@@ -52,7 +52,7 @@
 
 
 ;; Auto Complete
-;;(ac-config-default)
+(ac-config-default)
 
 ;; Smart Parens
 (require 'smartparens-config)
@@ -79,3 +79,18 @@
 ;; Visible Mark
 (require 'visible-mark)
 (global-visible-mark-mode 1)
+
+;; Theme
+(load-theme 'plan9)
+
+;; Set Font
+;; Set default font
+(set-face-attribute 'default nil
+                    :family "Input Mono"
+                    :height 110
+                    :weight 'normal
+                    :width 'normal)
+
+;; PATH on OSX
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
