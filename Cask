@@ -1,3 +1,4 @@
+(source gnu)
 (source melpa)
 
 (depends-on "pallet")
@@ -16,3 +17,5 @@
 (depends-on "seeing-is-believing")
 (depends-on "plan9-theme")
 (depends-on "exec-path-from-shell")
+(depends-on "auto-indent-mode")
+(depends-on "chruby.el")

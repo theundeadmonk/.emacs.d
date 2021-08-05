@@ -1,8 +1,8 @@
 ;; Set the starting position and width and height of Emacs Window
 (add-to-list 'default-frame-alist '(left . 0))
 (add-to-list 'default-frame-alist '(top . 0))
-(add-to-list 'default-frame-alist '(height . 45))
-(add-to-list 'default-frame-alist '(width . 175))
+(add-to-list 'default-frame-alist '(height . 90))
+(add-to-list 'default-frame-alist '(width . 350))
 
 ;; Prefer utf-8 encoding
 (prefer-coding-system 'utf-8)
@@ -15,7 +15,6 @@
 (setq-default truncate-lines nil)
 ;; Do not use tabs for indentation
 (setq-default indent-tabs-mode nil)
-(menu-bar-mode t)
 ;;(enable-theme 'solarized-dark)
 
 ;; trucate even even when screen is split into multiple windows
@@ -87,10 +86,14 @@
 ;; Set default font
 (set-face-attribute 'default nil
                     :family "Input Mono"
-                    :height 110
+                    :height 200
                     :weight 'normal
                     :width 'normal)
 
 ;; PATH on OSX
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+
+;; Auto Indent
+(require 'auto-indent-mode)
+(auto-indent-global-mode)
