@@ -2,6 +2,7 @@
 (source melpa)
 
 (depends-on "pallet")
+(depends-on "popup")
 (depends-on "auto-complete")
 (depends-on "enh-ruby-mode")
 (depends-on "smartparens")
@@ -18,4 +19,6 @@
 (depends-on "plan9-theme")
 (depends-on "exec-path-from-shell")
 (depends-on "auto-indent-mode")
-(depends-on "chruby.el")
+(depends-on "chruby")
+
+(depends-on "ledger-mode")
