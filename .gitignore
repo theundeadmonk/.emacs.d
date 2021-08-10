@@ -1,0 +1,14 @@
+# Ignore the cask directory
+.cask/
+
+# Ignore the elpa directory
+elpa/
+
+# Ignore auto save files
+auto-save-list/
+
+# Ignore projectile bookmarks
+*.eld
+
+#Ignore autocomplete history
+ac-comphist.dat
