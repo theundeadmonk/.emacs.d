@@ -1,8 +1,8 @@
-;; Set the starting position and width and height of Emacs Window
+                                        ; Set the starting position and width and height of Emacs Window
 (add-to-list 'default-frame-alist '(left . 0))
 (add-to-list 'default-frame-alist '(top . 0))
-(add-to-list 'default-frame-alist '(height . 90))
-(add-to-list 'default-frame-alist '(width . 350))
+(add-to-list 'default-frame-alist '(height . 1080))
+(add-to-list 'default-frame-alist '(width . 1920))
 
 ;; Prefer utf-8 encoding
 (prefer-coding-system 'utf-8)
@@ -51,7 +51,7 @@
 
 
 ;; Auto Complete
-(ac-config-default)
+(add-hook 'after-init-hook 'global-company-mode)
 
 ;; Smart Parens
 (require 'smartparens-config)
@@ -79,13 +79,10 @@
 (require 'visible-mark)
 (global-visible-mark-mode 1)
 
-;; Theme
-(load-theme 'plan9)
-
 ;; Set Font
 ;; Set default font
 (set-face-attribute 'default nil
-                    :family "Input Mono"
+                    :family "Monoid"
                     :height 200
                     :weight 'normal
                     :width 'normal)

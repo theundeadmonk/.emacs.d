@@ -8,3 +8,9 @@
           (lambda () (highlight-indentation-current-column-mode)))
 
 (add-hook 'enh-ruby-mode-hook 'seeing-is-believing)
+
+(add-hook 'enh-ruby-mode-hook 'minitest-mode)
+
+(add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)
+
+(add-hook 'enh-ruby-mode-hook #'lsp)

@@ -3,7 +3,7 @@
 
 (depends-on "pallet")
 (depends-on "popup")
-(depends-on "auto-complete")
+(depends-on "company")
 (depends-on "enh-ruby-mode")
 (depends-on "smartparens")
 (depends-on "projectile")
@@ -20,5 +20,13 @@
 (depends-on "exec-path-from-shell")
 (depends-on "auto-indent-mode")
 (depends-on "chruby")
+(depends-on "minitest")
+(depends-on "rustic")
+(depends-on "racer")
+(depends-on "lsp-mode")
+(depends-on "lsp-ui")
+(depends-on "flycheck")
+(depends-on "lsp-treemacs")
+(depends-on "lsp-ivy")
 
 (depends-on "ledger-mode")
