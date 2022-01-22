@@ -6,12 +6,15 @@
 ;; Ignore cl deprecation warnings
 (setq byte-compile-warnings '(cl-functions))
 
+(elpy-enable)
+
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (load "common-setup.el")
+(load "ledger.el")
+(load "python.el")
 (load "ruby.el")
 (load "yaml.el")
-(load "ledger.el")
 
 ;; Theme
 (load-theme 'plan9)
