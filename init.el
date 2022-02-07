@@ -2,6 +2,8 @@
 (cask-initialize)
 (require 'pallet)
 (pallet-mode t)
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;; Ignore cl deprecation warnings
 (setq byte-compile-warnings '(cl-functions))
@@ -11,6 +13,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom")
 
 (load "common-setup.el")
+(load "go.el")
 (load "ledger.el")
 (load "python.el")
 (load "ruby.el")
