@@ -17,6 +17,7 @@
 (depends-on "go-eldoc")
 (depends-on "go-mode")
 (depends-on "highlight-indentation")
+(depends-on "k8s-mode")
 (depends-on "ledger-mode")
 (depends-on "lsp-ivy")
 (depends-on "lsp-mode")
