@@ -1,4 +1,3 @@
-
 ;; Enable Flycheck
 (when (require 'flycheck nil t)
   (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
@@ -19,3 +18,17 @@
 
 (add-hook 'elpy-mode-hook '(lambda () 
                              (setq python-indent-offset 4)))
+
+;; Enable LSP mode
+(setq lsp-python-ms-auto-install-server t)
+(add-hook 'elpy-mode-hook #'lsp)
+
+;; DAP Mode
+(require 'dap-python)
+
+
+
+
+
+
+

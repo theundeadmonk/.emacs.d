@@ -94,3 +94,10 @@
 ;; Auto Indent
 (require 'auto-indent-mode)
 (auto-indent-global-mode)
+
+;; LSP mode
+(require 'lsp-mode)
+
+;; DAP mode
+(add-hook 'dap-stopped-hook
+          (lambda (arg) (call-interactively #'dap-hydra)))
